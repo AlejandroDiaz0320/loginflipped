@@ -1,0 +1,89 @@
+body {
+    background: url(../img/bglogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+}
+
+.container .row {
+    width: 100%;
+    height: 100vh;
+}
+
+.div-logo{
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.div-person{
+    height: 100vh;
+}
+
+.div-person img{
+    width: 465%;
+    z-index: 5;
+    position: relative;
+}
+
+.div-message {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    background: #febd55;
+    border-radius: 15px;
+    transform: rotate(1deg);
+}
+
+.div-message:before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #febd55;
+    position: absolute;
+    bottom: -70px;
+    left: 80%;
+    clip-path: polygon(-40% 0, 80% 0, 100% 100%);
+}
+
+/* .div-login {
+    background: #febd55;
+    border-radius: 20px;
+    transform: rotate(5deg);
+} */
+
+.container-login {
+    width: 100%;
+    display: inline-block !important;
+    background: #f8d7a2;
+    display: table-cell;
+    transform: rotate(359deg);
+}
+
+.title_login {
+    color: #675643 !important;
+}
+
+.icon-login {
+    background: transparent;
+    border: none;
+}
+
+.icon-login img {
+    height: 30px;
+}
+
+.input_login {
+    border: none;
+}
+
+.btn_login {
+    background: #8a26f6;
+    border-radius: 10px;
+    border: #8a26f6;
+}

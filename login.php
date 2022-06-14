@@ -33,7 +33,7 @@
                             <div class="text-center">
                                 <h3 class="title_login">Accede a la plataforma</h3>
                             </div>
-                            <form action="">
+                            <form action="http://82.180.163.123/campus/login/index.php">
                                 <div>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text icon-login">

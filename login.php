@@ -53,9 +53,9 @@
                                         <button class="btn btn_login" type="button">Acceder</button>
                                     </div>
                                     <?php
-                                    // if (error 3) {
-                                    //     echo "El usuario/contraseña son inconrrectos, por favor intentelo de nuevo";
-                                    // }
+                                    if (isset($_GET["errorcode"]) && $_GET["errorcode"] == 3) {
+                                        echo "El usuario/contraseña son inconrrectos, por favor intentelo de nuevo";
+                                    }
                                     ?>
                                     <p class="text-center fw-bold m-2">Olvide mi usuario y contraseña</p>
                                 </div>

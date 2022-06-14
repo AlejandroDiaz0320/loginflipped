@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 body {
     background: url(../img/bglogin.png);
     background-repeat: no-repeat;
@@ -8,6 +10,7 @@ body {
     height: 100vh;
     z-index: 10;
     position: absolute;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container .row {
@@ -15,24 +18,30 @@ body {
     height: 100vh;
 }
 
-.div-logo{
+.div-logo {
     width: 100%;
     position: relative;
     z-index: 10;
 }
 
-.div-person{
+.div-logo img {
+    transform: translate(-220px, 51px);
+    width: 100%;
+}
+
+.div-person {
     height: 100vh;
 }
 
-.div-person img{
-    width: 465%;
+.div-person img {
+    transform: translate(-183px, 47px);
+    width: 600px;
     z-index: 5;
     position: relative;
 }
 
 .div-message {
-    width: 100%;
+    width: 625px;
     border-radius: 20px;
     position: relative;
     background: #febd55;
@@ -74,16 +83,108 @@ body {
     border: none;
 }
 
-.icon-login img {
-    height: 30px;
+.icon-style {
+    font-size: 36px;
+    color: #ffffff;
 }
 
 .input_login {
     border: none;
+    border-radius: 10px;
 }
 
 .btn_login {
     background: #8a26f6;
     border-radius: 10px;
     border: #8a26f6;
+    color: #ffffff;
+}
+
+.btn_login:hover {
+    background: #a85bfb;
+    color: #ffffff;
+}
+
+
+@media (min-width: 500px) {
+    .div-logo img {
+        transform: translate(107px, 23px);
+        width: 50%;
+    }
+    .login-container{
+        transform: translate(10px, -177px)
+    }
+}
+@media (min-width: 768px) {
+    .div-logo img {
+        transform: translate(155px, 51px);
+        width: 50%;
+    }
+    .login-container{
+        transform: translate(10px, -177px)
+    }
+}
+
+@media (min-width: 992px) {
+    .div-logo img {
+        transform: translate(332px, 20px);
+        width: 100%;
+    }
+
+    .div-person img {
+        transform: translate(-116px, 37px);
+        width: 468px;
+    }
+
+    .login-container{
+        transform: none;
+    }
+}
+
+@media (min-width: 1140px) {
+    .div-logo img {
+        transform: translate(333px, 20px);
+    }
+
+    .div-person img {
+        transform: translate(-130px, 47px);
+        width: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .div-logo img {
+        transform: translate(405px, 20px);
+    }
+
+    .div-person img {
+        transform: translate(-130px, 47px);
+        width: 600px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .div-logo img {
+        transform: translate(480px, 20px);
+    }
+}
+
+@media (min-width: 1450px) {
+    .div-logo img {
+        transform: translate(-83px, 84px)
+    }
+
+    .div-person img {
+        transform: translate(-110px, 66px);
+    }
+}
+
+@media (min-width: 1700px) {
+    .div-logo img {
+        transform: translate(-220px, 51px);
+    }
+
+    .div-person img {
+        transform: translate(-183px, 47px);
+    }
 }
